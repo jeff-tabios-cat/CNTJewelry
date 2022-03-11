@@ -6,20 +6,25 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct LoginView: View {
     @State private var username = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         ZStack(alignment: .top) {
             Color.black.ignoresSafeArea()
             VStack {
-                ZStack(alignment: .top) {
-                    ZStack(alignment: .leading) {
+                Spacer()
+                ZStack(alignment: .center) {
+                    HStack {
                         Image("logobg")
-                            .frame(width: 359, height: 160, alignment: .leading)
+                            .frame(width: 309, height: 160)
+                        Spacer()
                     }
+                    .padding(.bottom, 80)
                     
                     ZStack(alignment: .trailing) {
                         Image("bpx")
@@ -29,57 +34,70 @@ struct LoginView: View {
                     .frame(width: UIScreen.main.bounds.width,
                            height: 238,
                            alignment: .trailing)
-                    .padding(.top, 80)
+                    .padding(.top, 180)
                     
-                    
-                    ZStack(alignment: .leading) {
+                    HStack {
                         Image("logo")
                             .frame(width: 166, height: 46, alignment: .leading)
+                            .padding(.leading, 50)
                     }
+                    .padding(.bottom, 80)
                     .frame(width: UIScreen.main.bounds.width,
                            height: 46,
                            alignment: .leading)
-                    .padding(.leading, 100)
-                    .padding(.top, 50)
                 }
+                
+                Spacer()
                 
                 VStack(alignment: .leading) {
                     Text("Welcome to Cartier Atlas")
                         .font(.title)
                         .foregroundColor(Color.white)
-                    Text("Please enter your login details below:")
+                    Text("Login with FaceID")
                         .font(.caption)
                         .foregroundColor(Color.white)
                     
-                    TextField("Email", text: $username)
-                        .foregroundColor(Color.white)
-                        .font(.body)
-                        .frame(height: 40)
-                    
-                    TextField("Password", text: $username)
-                        .foregroundColor(Color.white)
-                        .font(.body)
-                        .frame(height: 40)
                 }
-                .frame(width: UIScreen.main.bounds.width,
-                       height: 46,
-                       alignment: .leading)
-                .padding(.top, 32)
-                .padding(.leading, 32)
+                .frame(maxWidth: .infinity)
+                .multilineTextAlignment(.leading)
                 
+                Spacer()
                 
+                Button(action: {
+                    viewModel.loginWithFaceID()
+                }, label: {
+                    Text("Login with FaceID")
+                        .font(.system(size: 25))
+                        .padding()
+                        .frame(width: 280)
+                        .border(.white, width: 1)
+                        .foregroundColor(Color.white)
+                }).alert(isPresented: $viewModel.faceIdInvalid) {
+                    Alert(title: Text("Failed to authenticate"),
+                          message: Text("Please try again"),
+                          dismissButton: .default(Text("Got it!")))
+                }.alert(isPresented: $viewModel.faceIdNotAvailable) {
+                    Alert(title: Text("Face ID not available"),
+                          message: Text(""),
+                          dismissButton: .default(Text("Got it!")))
+                }
             
                 Button(action: {
                 }, label: {
-                    Text("Log In")
-                        .frame(height: 56)
-                        .frame(width: 250)
+                    Text("View Health Status")
+                        .padding()
+                        .frame(width: 280)
+                        .font(.system(size: 25))
                         .border(.white, width: 1)
                         .foregroundColor(Color.white)
-                        .padding(.top, 60)
                 })
+                
+                Spacer()
             }
-        }
+            
+            NavigationLink(destination: MainView(), isActive: $viewModel.isMainViewActive){}
+        } // ZStack
+        .navigationBarHidden(true)
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */; };
+		BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30F77127DB472D008DDDC4 /* MainView.swift */; };
 		BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */; };
 		BE33CB9D27D5E335001A2DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CB9C27D5E335001A2DFC /* ContentView.swift */; };
 		BE33CB9F27D5E33B001A2DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE33CB9E27D5E33B001A2DFC /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		BE30F77127DB472D008DDDC4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE33CB9727D5E335001A2DFC /* CNTJewelry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNTJewelry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNTJewelryApp.swift; sourceTree = "<group>"; };
 		BE33CB9C27D5E335001A2DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE30F76D27DB3DD3008DDDC4 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		BE30F77027DB470E008DDDC4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BE30F77127DB472D008DDDC4 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		BE33CB8E27D5E335001A2DFC = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +95,9 @@
 		BE33CBA827D5E375001A2DFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BE30F77027DB470E008DDDC4 /* Main */,
 				BE33CBA927D5E38C001A2DFC /* Login */,
+				BE30F76D27DB3DD3008DDDC4 /* Health */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -160,8 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */,
+				BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */,
 				BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */,
 				BE33CB9D27D5E335001A2DFC /* ContentView.swift in Sources */,
+				BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */,
 				BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CNTJewelry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CNTJewelry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
