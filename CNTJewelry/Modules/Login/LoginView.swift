@@ -83,8 +83,9 @@ struct LoginView: View {
                 }
             
                 Button(action: {
+                    viewModel.openHealthStatusView()
                 }, label: {
-                    Text("View Health Status")
+                    Text("Your Health Profile")
                         .padding()
                         .frame(width: 280)
                         .font(.system(size: 25))
@@ -96,6 +97,7 @@ struct LoginView: View {
             }
             
             NavigationLink(destination: MainView(), isActive: $viewModel.isMainViewActive){}
+            NavigationLink(destination: HealthView(), isActive: $viewModel.isHealthViewActive){}
         } // ZStack
         .navigationBarHidden(true)
     }

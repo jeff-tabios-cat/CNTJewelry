@@ -39,6 +39,6 @@ final class LoginViewModel: ObservableObject {
     }
     
     func openHealthStatusView() {
-        
+        self.isHealthViewActive = true
     }
 }

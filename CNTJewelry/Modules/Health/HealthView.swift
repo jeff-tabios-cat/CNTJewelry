@@ -8,15 +8,89 @@
 import SwiftUI
 
 struct HealthView: View {
+    
+    @StateObject var viewModel = HealthViewModel()
+    
+    @ViewBuilder
+    var profile: some View {
+        
+        HStack {
+            Text("Age")
+            Spacer()
+            Text(viewModel.age)
+        }
+        HStack {
+            Text("Sex")
+            Spacer()
+            Text(viewModel.sex)
+        }
+        HStack {
+            Text("Blood Type")
+            Spacer()
+            Text(viewModel.bloodType)
+        }
+        HStack {
+            Text("Weight")
+            Spacer()
+            Text(viewModel.weight)
+        }
+        HStack {
+            Text("Height")
+            Spacer()
+            Text(viewModel.height)
+        }
+        HStack {
+            Text("Body Mass Index (BMI)")
+            Spacer()
+            Text(viewModel.bmi)
+        }
+        
+        Button(action: {
+            viewModel.updateHealthInfo()
+        }, label: {
+            Text("Calculate BMI")
+                .padding()
+                .frame(width: 280)
+                .font(.system(size: 25))
+                .border(.white, width: 1)
+                .foregroundColor(Color.white)
+        }).alert(isPresented: $viewModel.showError) {
+            Alert(title: Text("Health Kit Error"),
+                  message: Text("Cannot get health details"),
+                  dismissButton: .default(Text("Got it!")))
+        }
+    }
+    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            VStack {
-                Text("Your Health")
+            VStack(spacing: 20) {
+                Text("Your Health Profile")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
+                
+                profile
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                
                 Spacer()
+                
+                Button(action: {
+                    viewModel.authorizeHealthKit()
+                }, label: {
+                    Text("Authorize")
+                        .padding()
+                        .frame(width: 280)
+                        .font(.system(size: 25))
+                        .border(.white, width: 1)
+                        .foregroundColor(Color.white)
+                }).alert(isPresented: $viewModel.showHealthKitAuthorized) {
+                    Alert(title: Text("Health Kit Authorized"),
+                          message: Text(""),
+                          dismissButton: .default(Text("Got it!")))
+                }
             }
         }
         .navigationBarHidden(true)

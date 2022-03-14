@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0FE30C27DF503500AD3219 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FE30B27DF503500AD3219 /* HKBloodType+StringRepresentation.swift */; };
+		BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FE30A27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift */; };
+		BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FA14A27DF474C0032DD9C /* UserHealthProfile.swift */; };
+		BE2FA14D27DF47830032DD9C /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FA14C27DF47830032DD9C /* ProfileDataStore.swift */; };
+		BE2FA14F27DF47AB0032DD9C /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FA14E27DF47AB0032DD9C /* HealthKitSetupAssistant.swift */; };
+		BE2FA15227DF48210032DD9C /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FA15127DF48210032DD9C /* HealthViewModel.swift */; };
+		BE2FA15727DF4A920032DD9C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2FA15627DF4A920032DD9C /* HealthKit.framework */; };
 		BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */; };
 		BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30F77127DB472D008DDDC4 /* MainView.swift */; };
 		BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */; };
@@ -18,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0FE30A27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		BE0FE30B27DF503500AD3219 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
+		BE2FA14A27DF474C0032DD9C /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		BE2FA14C27DF47830032DD9C /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		BE2FA14E27DF47AB0032DD9C /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		BE2FA15127DF48210032DD9C /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		BE2FA15327DF49CF0032DD9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE2FA15427DF4A920032DD9C /* CNTJewelry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CNTJewelry.entitlements; sourceTree = "<group>"; };
+		BE2FA15627DF4A920032DD9C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		BE30F77127DB472D008DDDC4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE33CB9727D5E335001A2DFC /* CNTJewelry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNTJewelry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,16 +50,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2FA15727DF4A920032DD9C /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE0FE30E27DF503A00AD3219 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE0FE30A27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift */,
+				BE0FE30B27DF503500AD3219 /* HKBloodType+StringRepresentation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2FA15027DF48030032DD9C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FA14E27DF47AB0032DD9C /* HealthKitSetupAssistant.swift */,
+				BE2FA14A27DF474C0032DD9C /* UserHealthProfile.swift */,
+				BE2FA14C27DF47830032DD9C /* ProfileDataStore.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE2FA15527DF4A920032DD9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FA15627DF4A920032DD9C /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE30F76D27DB3DD3008DDDC4 /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				BE0FE30E27DF503A00AD3219 /* Extensions */,
+				BE2FA15027DF48030032DD9C /* Helpers */,
 				BE30F76E27DB3DF9008DDDC4 /* HealthView.swift */,
+				BE2FA15127DF48210032DD9C /* HealthViewModel.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -61,6 +108,7 @@
 			children = (
 				BE33CB9927D5E335001A2DFC /* CNTJewelry */,
 				BE33CB9827D5E335001A2DFC /* Products */,
+				BE2FA15527DF4A920032DD9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +123,8 @@
 		BE33CB9927D5E335001A2DFC /* CNTJewelry */ = {
 			isa = PBXGroup;
 			children = (
+				BE2FA15427DF4A920032DD9C /* CNTJewelry.entitlements */,
+				BE2FA15327DF49CF0032DD9C /* Info.plist */,
 				BE33CBA827D5E375001A2DFC /* Modules */,
 				BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */,
 				BE33CB9C27D5E335001A2DFC /* ContentView.swift */,
@@ -181,11 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2FA14F27DF47AB0032DD9C /* HealthKitSetupAssistant.swift in Sources */,
+				BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */,
+				BE2FA14D27DF47830032DD9C /* ProfileDataStore.swift in Sources */,
 				BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */,
 				BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */,
 				BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */,
 				BE33CB9D27D5E335001A2DFC /* ContentView.swift in Sources */,
+				BE0FE30C27DF503500AD3219 /* HKBloodType+StringRepresentation.swift in Sources */,
 				BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */,
+				BE2FA15227DF48210032DD9C /* HealthViewModel.swift in Sources */,
+				BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,12 +370,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CNTJewelry/CNTJewelry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CNTJewelry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CNTJewelry/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow FaceID";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will allow sharing of health info";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will allow usage of health info";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,12 +403,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CNTJewelry/CNTJewelry.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CNTJewelry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CNTJewelry/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow FaceID";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We will allow sharing of health info";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We will allow usage of health info";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
