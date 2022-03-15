@@ -11,10 +11,25 @@ struct MainView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            Text("Welcome!")
-                .font(.system(size: 50))
-                .fontWeight(.bold)
-                .foregroundColor(Color.white)
+            VStack {
+                Text("Welcome!")
+                    .font(.system(size: 50))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                Text("This is a SwiftUI table")
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                List {
+                    Text("This is a sample row")
+                    Text("This is a sample row")
+                    Text("This is a sample row")
+                    Text("This is a sample row")
+                    Text("This is a sample row")
+                }
+                Spacer()
+            }
+            
         }
         .navigationBarHidden(true)
     }

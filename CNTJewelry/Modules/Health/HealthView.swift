@@ -45,6 +45,7 @@ struct HealthView: View {
             Text(viewModel.bmi)
         }
         
+        
         Button(action: {
             viewModel.updateHealthInfo()
         }, label: {
@@ -52,8 +53,8 @@ struct HealthView: View {
                 .padding()
                 .frame(width: 280)
                 .font(.system(size: 25))
-                .border(.white, width: 1)
-                .foregroundColor(Color.white)
+                .border(Color("lightDarkFont"), width: 1)
+                .foregroundColor(Color("lightDarkFont"))
         }).alert(isPresented: $viewModel.showError) {
             Alert(title: Text("Health Kit Error"),
                   message: Text("Cannot get health details"),
@@ -63,16 +64,16 @@ struct HealthView: View {
     
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
+            Color("bgLightDark").ignoresSafeArea()
             VStack(spacing: 20) {
                 Text("Your Health Profile")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color("lightDarkFont"))
                 
                 profile
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("lightDarkFont"))
                     .padding()
                 
                 Spacer()
@@ -84,8 +85,8 @@ struct HealthView: View {
                         .padding()
                         .frame(width: 280)
                         .font(.system(size: 25))
-                        .border(.white, width: 1)
-                        .foregroundColor(Color.white)
+                        .border(Color("lightDarkFont"), width: 1)
+                        .foregroundColor(Color("lightDarkFont"))
                 }).alert(isPresented: $viewModel.showHealthKitAuthorized) {
                     Alert(title: Text("Health Kit Authorized"),
                           message: Text(""),
@@ -100,5 +101,7 @@ struct HealthView: View {
 struct HealthView_Previews: PreviewProvider {
     static var previews: some View {
         HealthView()
+        HealthView()
+            .preferredColorScheme(.dark)
     }
 }
