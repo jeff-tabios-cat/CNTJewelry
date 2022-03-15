@@ -30,6 +30,7 @@ struct MainView: View {
                     Text("This is a sample row")
                     Text("This is a sample row")
                 }
+                .font(.system(size: 30))
                 
                 VStack(spacing: 0) {
                     Button("Press to show animation") {
@@ -52,7 +53,9 @@ struct MainView: View {
                             .transition(.move(edge: .bottom))
                     }
                         
-                }.foregroundColor(Color.white)
+                }
+                .font(.system(size: 30))
+                .foregroundColor(Color.white)
                 Spacer()
             }
             
