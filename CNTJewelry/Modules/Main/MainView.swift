@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var showDetails = false
+    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -20,6 +22,7 @@ struct MainView: View {
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
+                
                 List {
                     Text("This is a sample row")
                     Text("This is a sample row")
@@ -27,6 +30,29 @@ struct MainView: View {
                     Text("This is a sample row")
                     Text("This is a sample row")
                 }
+                
+                VStack(spacing: 0) {
+                    Button("Press to show animation") {
+                        withAnimation {
+                            showDetails.toggle()
+                        }
+                    }
+
+                    if showDetails {
+                        // Moves in from the bottom
+                        Text("Details go here.")
+                            .transition(.move(edge: .bottom))
+
+                        // Moves in from leading out, out to trailing edge.
+                        Text("Details go here.")
+                            .transition(.move(edge: .bottom))
+
+                        // Starts small and grows to full size.
+                        Text("Details go here.")
+                            .transition(.move(edge: .bottom))
+                    }
+                        
+                }.foregroundColor(Color.white)
                 Spacer()
             }
             
