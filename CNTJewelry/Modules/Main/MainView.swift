@@ -60,7 +60,7 @@ struct MainView: View {
             }
             
         }
-        .navigationBarHidden(true)
+        .navigationBarHidden(false)
     }
 }
 

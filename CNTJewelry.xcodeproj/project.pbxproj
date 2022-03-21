@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE06AB3627E8857E000B00F1 /* FTUEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3527E8857E000B00F1 /* FTUEView.swift */; };
+		BE06AB3827E8869C000B00F1 /* FTUE1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3727E8869C000B00F1 /* FTUE1.swift */; };
+		BE06AB3A27E886AA000B00F1 /* FTUE2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3927E886AA000B00F1 /* FTUE2.swift */; };
+		BE06AB3C27E886B6000B00F1 /* FTUE3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3B27E886B6000B00F1 /* FTUE3.swift */; };
+		BE06AB3E27E886C0000B00F1 /* FTUE4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3D27E886C0000B00F1 /* FTUE4.swift */; };
+		BE06AB4027E88E47000B00F1 /* FTUEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE06AB3F27E88E47000B00F1 /* FTUEViewModel.swift */; };
 		BE0FE30C27DF503500AD3219 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FE30B27DF503500AD3219 /* HKBloodType+StringRepresentation.swift */; };
 		BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FE30A27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift */; };
 		BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FA14A27DF474C0032DD9C /* UserHealthProfile.swift */; };
@@ -25,6 +31,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE06AB3527E8857E000B00F1 /* FTUEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUEView.swift; sourceTree = "<group>"; };
+		BE06AB3727E8869C000B00F1 /* FTUE1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUE1.swift; sourceTree = "<group>"; };
+		BE06AB3927E886AA000B00F1 /* FTUE2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUE2.swift; sourceTree = "<group>"; };
+		BE06AB3B27E886B6000B00F1 /* FTUE3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUE3.swift; sourceTree = "<group>"; };
+		BE06AB3D27E886C0000B00F1 /* FTUE4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUE4.swift; sourceTree = "<group>"; };
+		BE06AB3F27E88E47000B00F1 /* FTUEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUEViewModel.swift; sourceTree = "<group>"; };
 		BE0FE30A27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
 		BE0FE30B27DF503500AD3219 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
 		BE2FA14A27DF474C0032DD9C /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
@@ -57,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE06AB3427E8843B000B00F1 /* FTUE */ = {
+			isa = PBXGroup;
+			children = (
+				BE06AB3527E8857E000B00F1 /* FTUEView.swift */,
+				BE06AB3727E8869C000B00F1 /* FTUE1.swift */,
+				BE06AB3927E886AA000B00F1 /* FTUE2.swift */,
+				BE06AB3B27E886B6000B00F1 /* FTUE3.swift */,
+				BE06AB3D27E886C0000B00F1 /* FTUE4.swift */,
+				BE06AB3F27E88E47000B00F1 /* FTUEViewModel.swift */,
+			);
+			path = FTUE;
+			sourceTree = "<group>";
+		};
 		BE0FE30E27DF503A00AD3219 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +170,7 @@
 		BE33CBA827D5E375001A2DFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BE06AB3427E8843B000B00F1 /* FTUE */,
 				BE30F77027DB470E008DDDC4 /* Main */,
 				BE33CBA927D5E38C001A2DFC /* Login */,
 				BE30F76D27DB3DD3008DDDC4 /* Health */,
@@ -235,13 +261,19 @@
 				BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */,
 				BE2FA14D27DF47830032DD9C /* ProfileDataStore.swift in Sources */,
 				BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */,
+				BE06AB3E27E886C0000B00F1 /* FTUE4.swift in Sources */,
 				BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */,
 				BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */,
 				BE33CB9D27D5E335001A2DFC /* ContentView.swift in Sources */,
 				BE0FE30C27DF503500AD3219 /* HKBloodType+StringRepresentation.swift in Sources */,
 				BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */,
+				BE06AB3827E8869C000B00F1 /* FTUE1.swift in Sources */,
+				BE06AB3A27E886AA000B00F1 /* FTUE2.swift in Sources */,
 				BE2FA15227DF48210032DD9C /* HealthViewModel.swift in Sources */,
 				BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				BE06AB4027E88E47000B00F1 /* FTUEViewModel.swift in Sources */,
+				BE06AB3C27E886B6000B00F1 /* FTUE3.swift in Sources */,
+				BE06AB3627E8857E000B00F1 /* FTUEView.swift in Sources */,
 				BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

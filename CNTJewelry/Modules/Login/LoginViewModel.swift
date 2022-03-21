@@ -14,6 +14,7 @@ final class LoginViewModel: ObservableObject {
     @Published var faceIdInvalid = false
     @Published var faceIdNotAvailable = false
     @Published var isMainViewActive = false
+    @Published var isFTUEViewActive = false
     @Published var isHealthViewActive = false
     
     func loginWithFaceID() {
@@ -30,7 +31,7 @@ final class LoginViewModel: ObservableObject {
                         self.faceIdInvalid = true
                         return
                     }
-                    self.isMainViewActive = true
+                    self.isFTUEViewActive = true
                 }
             }
         } else {

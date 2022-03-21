@@ -96,6 +96,7 @@ struct LoginView: View {
                 Spacer()
             }
             
+            NavigationLink(destination: FTUEView(), isActive: $viewModel.isFTUEViewActive){}
             NavigationLink(destination: MainView(), isActive: $viewModel.isMainViewActive){}
             NavigationLink(destination: HealthView(), isActive: $viewModel.isHealthViewActive){}
         } // ZStack
