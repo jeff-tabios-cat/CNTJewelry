@@ -28,6 +28,10 @@
 		BE33CBA227D5E33B001A2DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE33CBA127D5E33B001A2DFC /* Preview Assets.xcassets */; };
 		BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CBAC27D5E3F2001A2DFC /* LoginView.swift */; };
 		BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */; };
+		BE8BCFFA27EB168F00EDD2F0 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */; };
+		BE8BCFFD27EB19AA00EDD2F0 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */; };
+		BEDFEF0027EB241200506707 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDFEEFF27EB241200506707 /* Color+.swift */; };
+		BEDFEF0227EB2B1900506707 /* BottomMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		BE33CBA127D5E33B001A2DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE33CBAC27D5E3F2001A2DFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
+		BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		BEDFEEFF27EB241200506707 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,8 @@
 		BE30F77027DB470E008DDDC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BE8BCFFB27EB16B900EDD2F0 /* Briefing */,
+				BE8BCFF827EB167600EDD2F0 /* Navigation */,
 				BE30F77127DB472D008DDDC4 /* MainView.swift */,
 			);
 			path = Main;
@@ -148,6 +158,7 @@
 		BE33CB9927D5E335001A2DFC /* CNTJewelry */ = {
 			isa = PBXGroup;
 			children = (
+				BEDFEEFE27EB240200506707 /* Extension */,
 				BE2FA15427DF4A920032DD9C /* CNTJewelry.entitlements */,
 				BE2FA15327DF49CF0032DD9C /* Info.plist */,
 				BE33CBA827D5E375001A2DFC /* Modules */,
@@ -185,6 +196,31 @@
 				BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		BE8BCFF827EB167600EDD2F0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */,
+				BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */,
+				BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BE8BCFFB27EB16B900EDD2F0 /* Briefing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Briefing;
+			sourceTree = "<group>";
+		};
+		BEDFEEFE27EB240200506707 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEDFEEFF27EB241200506707 /* Color+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,17 +300,21 @@
 				BE06AB3E27E886C0000B00F1 /* FTUE4.swift in Sources */,
 				BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */,
 				BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */,
+				BEDFEF0027EB241200506707 /* Color+.swift in Sources */,
 				BE33CB9D27D5E335001A2DFC /* ContentView.swift in Sources */,
 				BE0FE30C27DF503500AD3219 /* HKBloodType+StringRepresentation.swift in Sources */,
 				BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */,
 				BE06AB3827E8869C000B00F1 /* FTUE1.swift in Sources */,
 				BE06AB3A27E886AA000B00F1 /* FTUE2.swift in Sources */,
+				BE8BCFFD27EB19AA00EDD2F0 /* MenuButton.swift in Sources */,
 				BE2FA15227DF48210032DD9C /* HealthViewModel.swift in Sources */,
 				BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				BEDFEF0227EB2B1900506707 /* BottomMenuViewModel.swift in Sources */,
 				BE06AB4027E88E47000B00F1 /* FTUEViewModel.swift in Sources */,
 				BE06AB3C27E886B6000B00F1 /* FTUE3.swift in Sources */,
 				BE06AB3627E8857E000B00F1 /* FTUEView.swift in Sources */,
 				BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */,
+				BE8BCFFA27EB168F00EDD2F0 /* BottomMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
