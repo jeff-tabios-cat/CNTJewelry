@@ -8,34 +8,38 @@
 import SwiftUI
 
 struct BottomMenu: View {
-    @StateObject var viewModel = BottomMenuViewModel()
+    @Binding var selectedIndex: Int
     var body: some View {
         HStack(spacing: 30) {
             Button(action: {
-                viewModel.openStar()
+                selectedIndex = 0
             }, label: {
                 MenuButton(openImage: Image("icon-black-star"),
                            closedImage: Image("icon-white-star"),
                            label: "A la lune",
-                           isOpen: $viewModel.starIsOpen)
+                           isOpen: .constant(selectedIndex == 0))
             })
+            .animation(.easeIn, value: selectedIndex)
             Button(action: {
-                viewModel.openEye()
+                selectedIndex = 1
             }, label: {
                 MenuButton(openImage: Image("icon-black-eye"),
                            closedImage: Image("icon-white-eye"),
                            label: "Live",
-                           isOpen: $viewModel.eyeIsOpen)
+                           isOpen: .constant(selectedIndex == 1))
             })
+            .animation(.easeIn, value: selectedIndex)
             Button(action: {
-                viewModel.openBook()
+                selectedIndex = 2
             }, label: {
                 MenuButton(openImage: Image("icon-black-resources"),
                            closedImage: Image("icon-white-resources"),
                            label: "Resources",
-                           isOpen: $viewModel.bookIsOpen)
+                           isOpen: .constant(selectedIndex == 2))
             })
+            .animation(.easeIn, value: selectedIndex)
             Button(action: {
+                selectedIndex = 3
             }, label: {
                 Image("icon-white-add-takeaway")
                 .padding(8)
@@ -43,12 +47,15 @@ struct BottomMenu: View {
                     RoundedRectangle(cornerRadius: 50, style: .continuous).fill(Color.indigo)
                 )
             })
+            .animation(.easeIn, value: selectedIndex)
         }
     }
 }
 
 struct BottomMenu_Previews: PreviewProvider {
     static var previews: some View {
-        BottomMenu()
+        BottomMenu(selectedIndex: .constant(0))
+        BottomMenu(selectedIndex: .constant(1))
+        BottomMenu(selectedIndex: .constant(2))
     }
 }

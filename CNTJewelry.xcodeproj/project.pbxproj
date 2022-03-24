@@ -31,7 +31,9 @@
 		BE8BCFFA27EB168F00EDD2F0 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */; };
 		BE8BCFFD27EB19AA00EDD2F0 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */; };
 		BEDFEF0027EB241200506707 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDFEEFF27EB241200506707 /* Color+.swift */; };
-		BEDFEF0227EB2B1900506707 /* BottomMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */; };
+		BEEBAF6A27EC5CCB005FC4E9 /* Briefing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6927EC5CCB005FC4E9 /* Briefing.swift */; };
+		BEEBAF6E27EC60BC005FC4E9 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6D27EC60BC005FC4E9 /* Resources.swift */; };
+		BEEBAF7027EC60C4005FC4E9 /* Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6F27EC60C4005FC4E9 /* Live.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +64,9 @@
 		BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
 		BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		BEDFEEFF27EB241200506707 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
-		BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuViewModel.swift; sourceTree = "<group>"; };
+		BEEBAF6927EC5CCB005FC4E9 /* Briefing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Briefing.swift; sourceTree = "<group>"; };
+		BEEBAF6D27EC60BC005FC4E9 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		BEEBAF6F27EC60C4005FC4E9 /* Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +135,11 @@
 		BE30F77027DB470E008DDDC4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BE8BCFFB27EB16B900EDD2F0 /* Briefing */,
-				BE8BCFF827EB167600EDD2F0 /* Navigation */,
 				BE30F77127DB472D008DDDC4 /* MainView.swift */,
+				BE8BCFF827EB167600EDD2F0 /* Navigation */,
+				BE8BCFFB27EB16B900EDD2F0 /* Briefing */,
+				BEEBAF6C27EC60AB005FC4E9 /* Resources */,
+				BEEBAF6B27EC60A4005FC4E9 /* Live */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -181,9 +187,9 @@
 		BE33CBA827D5E375001A2DFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BE33CBA927D5E38C001A2DFC /* Login */,
 				BE06AB3427E8843B000B00F1 /* FTUE */,
 				BE30F77027DB470E008DDDC4 /* Main */,
-				BE33CBA927D5E38C001A2DFC /* Login */,
 				BE30F76D27DB3DD3008DDDC4 /* Health */,
 			);
 			path = Modules;
@@ -203,7 +209,6 @@
 			children = (
 				BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */,
 				BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */,
-				BEDFEF0127EB2B1900506707 /* BottomMenuViewModel.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 		BE8BCFFB27EB16B900EDD2F0 /* Briefing */ = {
 			isa = PBXGroup;
 			children = (
+				BEEBAF6927EC5CCB005FC4E9 /* Briefing.swift */,
 			);
 			path = Briefing;
 			sourceTree = "<group>";
@@ -221,6 +227,22 @@
 				BEDFEEFF27EB241200506707 /* Color+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BEEBAF6B27EC60A4005FC4E9 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBAF6F27EC60C4005FC4E9 /* Live.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		BEEBAF6C27EC60AB005FC4E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEEBAF6D27EC60BC005FC4E9 /* Resources.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2FA14F27DF47AB0032DD9C /* HealthKitSetupAssistant.swift in Sources */,
+				BEEBAF6A27EC5CCB005FC4E9 /* Briefing.swift in Sources */,
 				BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */,
 				BE2FA14D27DF47830032DD9C /* ProfileDataStore.swift in Sources */,
 				BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */,
+				BEEBAF7027EC60C4005FC4E9 /* Live.swift in Sources */,
 				BE06AB3E27E886C0000B00F1 /* FTUE4.swift in Sources */,
 				BE30F77227DB472D008DDDC4 /* MainView.swift in Sources */,
 				BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */,
@@ -306,10 +330,10 @@
 				BE30F76F27DB3DFA008DDDC4 /* HealthView.swift in Sources */,
 				BE06AB3827E8869C000B00F1 /* FTUE1.swift in Sources */,
 				BE06AB3A27E886AA000B00F1 /* FTUE2.swift in Sources */,
+				BEEBAF6E27EC60BC005FC4E9 /* Resources.swift in Sources */,
 				BE8BCFFD27EB19AA00EDD2F0 /* MenuButton.swift in Sources */,
 				BE2FA15227DF48210032DD9C /* HealthViewModel.swift in Sources */,
 				BE0FE30D27DF503500AD3219 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
-				BEDFEF0227EB2B1900506707 /* BottomMenuViewModel.swift in Sources */,
 				BE06AB4027E88E47000B00F1 /* FTUEViewModel.swift in Sources */,
 				BE06AB3C27E886B6000B00F1 /* FTUE3.swift in Sources */,
 				BE06AB3627E8857E000B00F1 /* FTUEView.swift in Sources */,

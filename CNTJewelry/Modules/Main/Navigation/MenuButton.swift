@@ -14,7 +14,7 @@ struct MenuButton: View {
     @Binding var isOpen: Bool
     var body: some View {
         ZStack {
-            HStack {
+            HStack(spacing: 0) {
                 if isOpen {
                     openImage
                     Text(label)
@@ -24,12 +24,14 @@ struct MenuButton: View {
                 }
             }
             .padding(6)
+            .padding(.leading, 10)
+            .padding(.trailing, 10)
             .background(
                 RoundedRectangle(cornerRadius: 50, style: .continuous).fill(isOpen ? Color.white : Color.black)
             )
             .background(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(isOpen ? Color.black : Color.white, lineWidth: 1)
+                    .stroke(isOpen ? Color.black : Color.white, lineWidth: 2)
             )
         }
     }
