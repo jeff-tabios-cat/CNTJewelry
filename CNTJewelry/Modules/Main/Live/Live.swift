@@ -10,6 +10,7 @@ import SwiftUI
 struct Live: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
+            TopNav()
             Image("live")
         }
         .background(Color.white)

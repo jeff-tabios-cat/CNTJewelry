@@ -10,6 +10,7 @@ import SwiftUI
 struct Briefing: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
+            TopNav()
             Image("briefing")
         }
         .background(Color.white)

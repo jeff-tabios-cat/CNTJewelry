@@ -10,6 +10,7 @@ import SwiftUI
 struct Resources: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
+            TopNav()
             Image("resources")
         }
         .background(Color.white)
