@@ -51,10 +51,10 @@ struct LoginView: View {
                 
                 VStack(alignment: .leading) {
                     Text("Welcome to Cartier Atlas")
-                        .font(.title)
+                        .font(Font.custom("BrilliantCutProB7-Medium", size: 24))
                         .foregroundColor(Color.white)
                     Text("Login with FaceID")
-                        .font(.caption)
+                        .font(Font.custom("BrilliantCutProB7-Medium", size: 14))
                         .foregroundColor(Color.white)
                     
                 }
@@ -67,7 +67,7 @@ struct LoginView: View {
                     viewModel.loginWithFaceID()
                 }, label: {
                     Text("Login with FaceID")
-                        .font(.system(size: 25))
+                        .font(Font.custom("BrilliantCutProB7-Medium", size: 20))
                         .padding()
                         .frame(width: 280)
                         .border(.white, width: 1)
@@ -88,7 +88,7 @@ struct LoginView: View {
                     Text("Your Health Profile")
                         .padding()
                         .frame(width: 280)
-                        .font(.system(size: 25))
+                        .font(Font.custom("BrilliantCutProB7-Medium", size: 20))
                         .border(.white, width: 1)
                         .foregroundColor(Color.white)
                 })

@@ -28,6 +28,42 @@
 		BE33CBA227D5E33B001A2DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE33CBA127D5E33B001A2DFC /* Preview Assets.xcassets */; };
 		BE33CBAD27D5E3F2001A2DFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CBAC27D5E3F2001A2DFC /* LoginView.swift */; };
 		BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */; };
+		BE64345A27F42E6000BB4F26 /* FancyCutExtProB7-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343327F42E6000BB4F26 /* FancyCutExtProB7-Light.otf */; };
+		BE64345B27F42E6000BB4F26 /* FancyCutExtProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343427F42E6000BB4F26 /* FancyCutExtProB7-Bold.otf */; };
+		BE64345C27F42E6000BB4F26 /* FancyCutExtProB7-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343527F42E6000BB4F26 /* FancyCutExtProB7-Thin.otf */; };
+		BE64345D27F42E6000BB4F26 /* FancyCutExtProB7-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343627F42E6000BB4F26 /* FancyCutExtProB7-MediumItalic.otf */; };
+		BE64345E27F42E6000BB4F26 /* FancyCutExtProB7-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343727F42E6000BB4F26 /* FancyCutExtProB7-RegularItalic.otf */; };
+		BE64345F27F42E6000BB4F26 /* FancyCutExtProB7-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343827F42E6000BB4F26 /* FancyCutExtProB7-Regular.otf */; };
+		BE64346027F42E6000BB4F26 /* FancyCutExtProB7-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343927F42E6000BB4F26 /* FancyCutExtProB7-Medium.otf */; };
+		BE64346127F42E6000BB4F26 /* FancyCutExtProB7-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343A27F42E6000BB4F26 /* FancyCutExtProB7-ThinItalic.otf */; };
+		BE64346227F42E6000BB4F26 /* FancyCutExtProB7-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343B27F42E6000BB4F26 /* FancyCutExtProB7-BoldItalic.otf */; };
+		BE64346327F42E6000BB4F26 /* FancyCutExtProB7-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343C27F42E6000BB4F26 /* FancyCutExtProB7-LightItalic.otf */; };
+		BE64346427F42E6000BB4F26 /* FancyCutProB7-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343E27F42E6000BB4F26 /* FancyCutProB7-LightItalic.otf */; };
+		BE64346527F42E6000BB4F26 /* FancyCutProB7-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64343F27F42E6000BB4F26 /* FancyCutProB7-Regular.otf */; };
+		BE64346627F42E6000BB4F26 /* FancyCutProB7-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344027F42E6000BB4F26 /* FancyCutProB7-RegularItalic.otf */; };
+		BE64346727F42E6000BB4F26 /* FancyCutProB7-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344127F42E6000BB4F26 /* FancyCutProB7-MediumItalic.otf */; };
+		BE64346827F42E6000BB4F26 /* FancyCutProB7-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344227F42E6000BB4F26 /* FancyCutProB7-BoldItalic.otf */; };
+		BE64346927F42E6000BB4F26 /* FancyCutProB7-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344327F42E6000BB4F26 /* FancyCutProB7-ThinItalic.otf */; };
+		BE64346A27F42E6000BB4F26 /* FancyCutProB7-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344427F42E6000BB4F26 /* FancyCutProB7-Thin.otf */; };
+		BE64346B27F42E6000BB4F26 /* FancyCutProB7-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344527F42E6000BB4F26 /* FancyCutProB7-Light.otf */; };
+		BE64346C27F42E6000BB4F26 /* FancyCutProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344627F42E6000BB4F26 /* FancyCutProB7-Bold.otf */; };
+		BE64346D27F42E6000BB4F26 /* FancyCutProB7-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344727F42E6000BB4F26 /* FancyCutProB7-Medium.otf */; };
+		BE64346E27F42E6000BB4F26 /* FancyCutCondProB7-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344927F42E6000BB4F26 /* FancyCutCondProB7-Light.otf */; };
+		BE64346F27F42E6000BB4F26 /* FancyCutCondProB7-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344A27F42E6000BB4F26 /* FancyCutCondProB7-Regular.otf */; };
+		BE64347027F42E6000BB4F26 /* FancyCutCondProB7-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344B27F42E6000BB4F26 /* FancyCutCondProB7-Medium.otf */; };
+		BE64347127F42E6000BB4F26 /* FancyCutCondProB7-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344C27F42E6000BB4F26 /* FancyCutCondProB7-ThinItalic.otf */; };
+		BE64347227F42E6000BB4F26 /* FancyCutCondProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344D27F42E6000BB4F26 /* FancyCutCondProB7-Bold.otf */; };
+		BE64347327F42E6000BB4F26 /* FancyCutCondProB7-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344E27F42E6000BB4F26 /* FancyCutCondProB7-LightItalic.otf */; };
+		BE64347427F42E6000BB4F26 /* FancyCutCondProB7-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64344F27F42E6000BB4F26 /* FancyCutCondProB7-BoldItalic.otf */; };
+		BE64347527F42E6000BB4F26 /* FancyCutCondProB7-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345027F42E6000BB4F26 /* FancyCutCondProB7-Thin.otf */; };
+		BE64347627F42E6000BB4F26 /* FancyCutCondProB7-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345127F42E6000BB4F26 /* FancyCutCondProB7-RegularItalic.otf */; };
+		BE64347727F42E6000BB4F26 /* FancyCutCondProB7-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345227F42E6000BB4F26 /* FancyCutCondProB7-MediumItalic.otf */; };
+		BE64347827F42E6000BB4F26 /* BrilliantCutProB7-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345427F42E6000BB4F26 /* BrilliantCutProB7-Thin.otf */; };
+		BE64347927F42E6000BB4F26 /* BrilliantCutProB7-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345527F42E6000BB4F26 /* BrilliantCutProB7-Bold.otf */; };
+		BE64347A27F42E6000BB4F26 /* BrilliantCutProB7-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345627F42E6000BB4F26 /* BrilliantCutProB7-Regular.otf */; };
+		BE64347B27F42E6000BB4F26 /* BrilliantCutProB7-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345727F42E6000BB4F26 /* BrilliantCutProB7-Black.otf */; };
+		BE64347C27F42E6000BB4F26 /* BrilliantCutProB7-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345827F42E6000BB4F26 /* BrilliantCutProB7-Light.otf */; };
+		BE64347D27F42E6000BB4F26 /* BrilliantCutProB7-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE64345927F42E6000BB4F26 /* BrilliantCutProB7-Medium.otf */; };
 		BE8BCFFA27EB168F00EDD2F0 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */; };
 		BE8BCFFD27EB19AA00EDD2F0 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */; };
 		BE9231BA27F1C1A4009F2CB8 /* TopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9231B927F1C1A4009F2CB8 /* TopNav.swift */; };
@@ -62,6 +98,42 @@
 		BE33CBA127D5E33B001A2DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE33CBAC27D5E3F2001A2DFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BE64343327F42E6000BB4F26 /* FancyCutExtProB7-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-Light.otf"; sourceTree = "<group>"; };
+		BE64343427F42E6000BB4F26 /* FancyCutExtProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-Bold.otf"; sourceTree = "<group>"; };
+		BE64343527F42E6000BB4F26 /* FancyCutExtProB7-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-Thin.otf"; sourceTree = "<group>"; };
+		BE64343627F42E6000BB4F26 /* FancyCutExtProB7-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-MediumItalic.otf"; sourceTree = "<group>"; };
+		BE64343727F42E6000BB4F26 /* FancyCutExtProB7-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-RegularItalic.otf"; sourceTree = "<group>"; };
+		BE64343827F42E6000BB4F26 /* FancyCutExtProB7-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-Regular.otf"; sourceTree = "<group>"; };
+		BE64343927F42E6000BB4F26 /* FancyCutExtProB7-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-Medium.otf"; sourceTree = "<group>"; };
+		BE64343A27F42E6000BB4F26 /* FancyCutExtProB7-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-ThinItalic.otf"; sourceTree = "<group>"; };
+		BE64343B27F42E6000BB4F26 /* FancyCutExtProB7-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-BoldItalic.otf"; sourceTree = "<group>"; };
+		BE64343C27F42E6000BB4F26 /* FancyCutExtProB7-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutExtProB7-LightItalic.otf"; sourceTree = "<group>"; };
+		BE64343E27F42E6000BB4F26 /* FancyCutProB7-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-LightItalic.otf"; sourceTree = "<group>"; };
+		BE64343F27F42E6000BB4F26 /* FancyCutProB7-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Regular.otf"; sourceTree = "<group>"; };
+		BE64344027F42E6000BB4F26 /* FancyCutProB7-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-RegularItalic.otf"; sourceTree = "<group>"; };
+		BE64344127F42E6000BB4F26 /* FancyCutProB7-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-MediumItalic.otf"; sourceTree = "<group>"; };
+		BE64344227F42E6000BB4F26 /* FancyCutProB7-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-BoldItalic.otf"; sourceTree = "<group>"; };
+		BE64344327F42E6000BB4F26 /* FancyCutProB7-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-ThinItalic.otf"; sourceTree = "<group>"; };
+		BE64344427F42E6000BB4F26 /* FancyCutProB7-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Thin.otf"; sourceTree = "<group>"; };
+		BE64344527F42E6000BB4F26 /* FancyCutProB7-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Light.otf"; sourceTree = "<group>"; };
+		BE64344627F42E6000BB4F26 /* FancyCutProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Bold.otf"; sourceTree = "<group>"; };
+		BE64344727F42E6000BB4F26 /* FancyCutProB7-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutProB7-Medium.otf"; sourceTree = "<group>"; };
+		BE64344927F42E6000BB4F26 /* FancyCutCondProB7-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-Light.otf"; sourceTree = "<group>"; };
+		BE64344A27F42E6000BB4F26 /* FancyCutCondProB7-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-Regular.otf"; sourceTree = "<group>"; };
+		BE64344B27F42E6000BB4F26 /* FancyCutCondProB7-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-Medium.otf"; sourceTree = "<group>"; };
+		BE64344C27F42E6000BB4F26 /* FancyCutCondProB7-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-ThinItalic.otf"; sourceTree = "<group>"; };
+		BE64344D27F42E6000BB4F26 /* FancyCutCondProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-Bold.otf"; sourceTree = "<group>"; };
+		BE64344E27F42E6000BB4F26 /* FancyCutCondProB7-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-LightItalic.otf"; sourceTree = "<group>"; };
+		BE64344F27F42E6000BB4F26 /* FancyCutCondProB7-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-BoldItalic.otf"; sourceTree = "<group>"; };
+		BE64345027F42E6000BB4F26 /* FancyCutCondProB7-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-Thin.otf"; sourceTree = "<group>"; };
+		BE64345127F42E6000BB4F26 /* FancyCutCondProB7-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-RegularItalic.otf"; sourceTree = "<group>"; };
+		BE64345227F42E6000BB4F26 /* FancyCutCondProB7-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FancyCutCondProB7-MediumItalic.otf"; sourceTree = "<group>"; };
+		BE64345427F42E6000BB4F26 /* BrilliantCutProB7-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Thin.otf"; sourceTree = "<group>"; };
+		BE64345527F42E6000BB4F26 /* BrilliantCutProB7-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Bold.otf"; sourceTree = "<group>"; };
+		BE64345627F42E6000BB4F26 /* BrilliantCutProB7-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Regular.otf"; sourceTree = "<group>"; };
+		BE64345727F42E6000BB4F26 /* BrilliantCutProB7-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Black.otf"; sourceTree = "<group>"; };
+		BE64345827F42E6000BB4F26 /* BrilliantCutProB7-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Light.otf"; sourceTree = "<group>"; };
+		BE64345927F42E6000BB4F26 /* BrilliantCutProB7-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrilliantCutProB7-Medium.otf"; sourceTree = "<group>"; };
 		BE8BCFF927EB168F00EDD2F0 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
 		BE8BCFFC27EB19AA00EDD2F0 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		BE9231B927F1C1A4009F2CB8 /* TopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNav.swift; sourceTree = "<group>"; };
@@ -166,13 +238,12 @@
 		BE33CB9927D5E335001A2DFC /* CNTJewelry */ = {
 			isa = PBXGroup;
 			children = (
+				BE64347F27F42EA800BB4F26 /* General */,
+				BE33CBA827D5E375001A2DFC /* Modules */,
+				BE64347E27F42E8700BB4F26 /* Resources */,
 				BEDFEEFE27EB240200506707 /* Extension */,
 				BE2FA15427DF4A920032DD9C /* CNTJewelry.entitlements */,
 				BE2FA15327DF49CF0032DD9C /* Info.plist */,
-				BE33CBA827D5E375001A2DFC /* Modules */,
-				BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */,
-				BE33CB9C27D5E335001A2DFC /* ContentView.swift */,
-				BE33CB9E27D5E33B001A2DFC /* Assets.xcassets */,
 				BE33CBA027D5E33B001A2DFC /* Preview Content */,
 			);
 			path = CNTJewelry;
@@ -204,6 +275,99 @@
 				BE33CBAE27D5F42C001A2DFC /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		BE64343127F42E6000BB4F26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE64343227F42E6000BB4F26 /* FancyCutExt */,
+				BE64343D27F42E6000BB4F26 /* FancyCutPro */,
+				BE64344827F42E6000BB4F26 /* FancyCutCond */,
+				BE64345327F42E6000BB4F26 /* BriilliantCutPro */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BE64343227F42E6000BB4F26 /* FancyCutExt */ = {
+			isa = PBXGroup;
+			children = (
+				BE64343327F42E6000BB4F26 /* FancyCutExtProB7-Light.otf */,
+				BE64343427F42E6000BB4F26 /* FancyCutExtProB7-Bold.otf */,
+				BE64343527F42E6000BB4F26 /* FancyCutExtProB7-Thin.otf */,
+				BE64343627F42E6000BB4F26 /* FancyCutExtProB7-MediumItalic.otf */,
+				BE64343727F42E6000BB4F26 /* FancyCutExtProB7-RegularItalic.otf */,
+				BE64343827F42E6000BB4F26 /* FancyCutExtProB7-Regular.otf */,
+				BE64343927F42E6000BB4F26 /* FancyCutExtProB7-Medium.otf */,
+				BE64343A27F42E6000BB4F26 /* FancyCutExtProB7-ThinItalic.otf */,
+				BE64343B27F42E6000BB4F26 /* FancyCutExtProB7-BoldItalic.otf */,
+				BE64343C27F42E6000BB4F26 /* FancyCutExtProB7-LightItalic.otf */,
+			);
+			path = FancyCutExt;
+			sourceTree = "<group>";
+		};
+		BE64343D27F42E6000BB4F26 /* FancyCutPro */ = {
+			isa = PBXGroup;
+			children = (
+				BE64343E27F42E6000BB4F26 /* FancyCutProB7-LightItalic.otf */,
+				BE64343F27F42E6000BB4F26 /* FancyCutProB7-Regular.otf */,
+				BE64344027F42E6000BB4F26 /* FancyCutProB7-RegularItalic.otf */,
+				BE64344127F42E6000BB4F26 /* FancyCutProB7-MediumItalic.otf */,
+				BE64344227F42E6000BB4F26 /* FancyCutProB7-BoldItalic.otf */,
+				BE64344327F42E6000BB4F26 /* FancyCutProB7-ThinItalic.otf */,
+				BE64344427F42E6000BB4F26 /* FancyCutProB7-Thin.otf */,
+				BE64344527F42E6000BB4F26 /* FancyCutProB7-Light.otf */,
+				BE64344627F42E6000BB4F26 /* FancyCutProB7-Bold.otf */,
+				BE64344727F42E6000BB4F26 /* FancyCutProB7-Medium.otf */,
+			);
+			path = FancyCutPro;
+			sourceTree = "<group>";
+		};
+		BE64344827F42E6000BB4F26 /* FancyCutCond */ = {
+			isa = PBXGroup;
+			children = (
+				BE64344927F42E6000BB4F26 /* FancyCutCondProB7-Light.otf */,
+				BE64344A27F42E6000BB4F26 /* FancyCutCondProB7-Regular.otf */,
+				BE64344B27F42E6000BB4F26 /* FancyCutCondProB7-Medium.otf */,
+				BE64344C27F42E6000BB4F26 /* FancyCutCondProB7-ThinItalic.otf */,
+				BE64344D27F42E6000BB4F26 /* FancyCutCondProB7-Bold.otf */,
+				BE64344E27F42E6000BB4F26 /* FancyCutCondProB7-LightItalic.otf */,
+				BE64344F27F42E6000BB4F26 /* FancyCutCondProB7-BoldItalic.otf */,
+				BE64345027F42E6000BB4F26 /* FancyCutCondProB7-Thin.otf */,
+				BE64345127F42E6000BB4F26 /* FancyCutCondProB7-RegularItalic.otf */,
+				BE64345227F42E6000BB4F26 /* FancyCutCondProB7-MediumItalic.otf */,
+			);
+			path = FancyCutCond;
+			sourceTree = "<group>";
+		};
+		BE64345327F42E6000BB4F26 /* BriilliantCutPro */ = {
+			isa = PBXGroup;
+			children = (
+				BE64345427F42E6000BB4F26 /* BrilliantCutProB7-Thin.otf */,
+				BE64345527F42E6000BB4F26 /* BrilliantCutProB7-Bold.otf */,
+				BE64345627F42E6000BB4F26 /* BrilliantCutProB7-Regular.otf */,
+				BE64345727F42E6000BB4F26 /* BrilliantCutProB7-Black.otf */,
+				BE64345827F42E6000BB4F26 /* BrilliantCutProB7-Light.otf */,
+				BE64345927F42E6000BB4F26 /* BrilliantCutProB7-Medium.otf */,
+			);
+			path = BriilliantCutPro;
+			sourceTree = "<group>";
+		};
+		BE64347E27F42E8700BB4F26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE33CB9E27D5E33B001A2DFC /* Assets.xcassets */,
+				BE64343127F42E6000BB4F26 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE64347F27F42EA800BB4F26 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BE33CB9A27D5E335001A2DFC /* CNTJewelryApp.swift */,
+				BE33CB9C27D5E335001A2DFC /* ContentView.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		BE8BCFF827EB167600EDD2F0 /* Navigation */ = {
@@ -306,7 +470,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE64346A27F42E6000BB4F26 /* FancyCutProB7-Thin.otf in Resources */,
+				BE64346727F42E6000BB4F26 /* FancyCutProB7-MediumItalic.otf in Resources */,
+				BE64346E27F42E6000BB4F26 /* FancyCutCondProB7-Light.otf in Resources */,
+				BE64347A27F42E6000BB4F26 /* BrilliantCutProB7-Regular.otf in Resources */,
+				BE64347427F42E6000BB4F26 /* FancyCutCondProB7-BoldItalic.otf in Resources */,
+				BE64346B27F42E6000BB4F26 /* FancyCutProB7-Light.otf in Resources */,
+				BE64346327F42E6000BB4F26 /* FancyCutExtProB7-LightItalic.otf in Resources */,
+				BE64347927F42E6000BB4F26 /* BrilliantCutProB7-Bold.otf in Resources */,
+				BE64345C27F42E6000BB4F26 /* FancyCutExtProB7-Thin.otf in Resources */,
+				BE64347827F42E6000BB4F26 /* BrilliantCutProB7-Thin.otf in Resources */,
+				BE64347C27F42E6000BB4F26 /* BrilliantCutProB7-Light.otf in Resources */,
+				BE64347327F42E6000BB4F26 /* FancyCutCondProB7-LightItalic.otf in Resources */,
+				BE64347D27F42E6000BB4F26 /* BrilliantCutProB7-Medium.otf in Resources */,
+				BE64347727F42E6000BB4F26 /* FancyCutCondProB7-MediumItalic.otf in Resources */,
+				BE64346C27F42E6000BB4F26 /* FancyCutProB7-Bold.otf in Resources */,
 				BE33CBA227D5E33B001A2DFC /* Preview Assets.xcassets in Resources */,
+				BE64345F27F42E6000BB4F26 /* FancyCutExtProB7-Regular.otf in Resources */,
+				BE64345A27F42E6000BB4F26 /* FancyCutExtProB7-Light.otf in Resources */,
+				BE64347027F42E6000BB4F26 /* FancyCutCondProB7-Medium.otf in Resources */,
+				BE64346027F42E6000BB4F26 /* FancyCutExtProB7-Medium.otf in Resources */,
+				BE64345E27F42E6000BB4F26 /* FancyCutExtProB7-RegularItalic.otf in Resources */,
+				BE64345B27F42E6000BB4F26 /* FancyCutExtProB7-Bold.otf in Resources */,
+				BE64347527F42E6000BB4F26 /* FancyCutCondProB7-Thin.otf in Resources */,
+				BE64346527F42E6000BB4F26 /* FancyCutProB7-Regular.otf in Resources */,
+				BE64346427F42E6000BB4F26 /* FancyCutProB7-LightItalic.otf in Resources */,
+				BE64347627F42E6000BB4F26 /* FancyCutCondProB7-RegularItalic.otf in Resources */,
+				BE64347127F42E6000BB4F26 /* FancyCutCondProB7-ThinItalic.otf in Resources */,
+				BE64346627F42E6000BB4F26 /* FancyCutProB7-RegularItalic.otf in Resources */,
+				BE64347227F42E6000BB4F26 /* FancyCutCondProB7-Bold.otf in Resources */,
+				BE64346227F42E6000BB4F26 /* FancyCutExtProB7-BoldItalic.otf in Resources */,
+				BE64346D27F42E6000BB4F26 /* FancyCutProB7-Medium.otf in Resources */,
+				BE64345D27F42E6000BB4F26 /* FancyCutExtProB7-MediumItalic.otf in Resources */,
+				BE64346927F42E6000BB4F26 /* FancyCutProB7-ThinItalic.otf in Resources */,
+				BE64347B27F42E6000BB4F26 /* BrilliantCutProB7-Black.otf in Resources */,
+				BE64346127F42E6000BB4F26 /* FancyCutExtProB7-ThinItalic.otf in Resources */,
+				BE64346827F42E6000BB4F26 /* FancyCutProB7-BoldItalic.otf in Resources */,
+				BE64346F27F42E6000BB4F26 /* FancyCutCondProB7-Regular.otf in Resources */,
 				BE33CB9F27D5E33B001A2DFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
