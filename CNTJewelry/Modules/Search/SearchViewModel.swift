@@ -18,4 +18,18 @@ final class SearchViewModel: ObservableObject {
     @Published var results: [SearchResult] = [SearchResult(text: "result 1"),
                                               SearchResult(text: "result 2"),
                                               SearchResult(text: "result 3")]
+    
+    init() {
+        setupBindings()
+    }
+}
+
+extension SearchViewModel {
+    func setupBindings() {
+        
+    }
+    
+    func search() {
+        
+    }
 }

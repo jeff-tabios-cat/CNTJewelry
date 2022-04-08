@@ -16,6 +16,9 @@ struct SearchView: View {
             VStack {
                 HStack {
                     TextField("Search CNT", text: $viewModel.query)
+                        .onChange(of: viewModel.query) { newValue in
+                            viewModel.search()
+                        }
                     Image("icon-black-search")
                         .tint(.white)
                         .foregroundColor(.white)
