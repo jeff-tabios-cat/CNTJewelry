@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+struct Triangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+
+        path.move(to: CGPoint(x: rect.maxX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+
+        return path
+    }
+}
+
 struct SearchView: View {
     
     @ObservedObject var viewModel = SearchViewModel()
@@ -15,23 +27,113 @@ struct SearchView: View {
         ZStack {
             VStack {
                 HStack {
-                    TextField("Search CNT", text: $viewModel.query)
-                        .onChange(of: viewModel.query) { newValue in
-                            viewModel.search()
+                    ZStack {
+                        HStack {
+                            Text("Search")
+                                .font(AppFonts.articleTitle)
+                                .foregroundColor(getBackgroundColor())
+                            Spacer()
                         }
-                    Image("icon-black-search")
+                        .padding(.bottom, 20)
+                        
+                        HStack {
+                            Spacer()
+                            Triangle()
+                                .fill(getBackgroundColor())
+                                .frame(width: 30, height: 30)
+                                .frame(alignment: .trailing)
+                        }
+                        .padding(.top, 25)
+                        
+                    }
+                    .padding(.top, 20)
+                    .padding(.leading, 20)
+                    .background(getHeaderBackgroundColor())
+                    
+                    Image(getExitIcon())
+                        .tint(.white)
+                        .foregroundColor(.white)
+                        .padding(.trailing, 20)
+                        .padding(.leading, 30)
+                }
+                .frame(maxWidth: .infinity)
+                
+                HStack {
+                    TextField("Search CNT", text: $viewModel.query)
+                        .autocapitalization(.none)
+                        .foregroundColor(getForegroundColor())
+                    
+                    Image(getSeachIconColor())
                         .tint(.white)
                         .foregroundColor(.white)
                 }
-                .frame(width: 300)
-                List(viewModel.results) { result in
-                    SearchResultRow(searchResult: result)
+                .frame(maxWidth: .infinity)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
+                .padding(.top, 40)
+                
+                Rectangle()
+                    .frame(height: 1.0, alignment: .bottom)
+                    .foregroundColor(getForegroundColor())
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
+                
+                ScrollView {
+                    LazyVStack(spacing: 1) {
+                        ForEach(viewModel.results) { result in
+                            SearchResultRow(searchResult: result)
+                        }
+                    }
                 }
-                Spacer()
             }
+            Spacer()
         }
-        
+        .background(getBackgroundColor())
+        .animation(.easeIn(duration: 0.1), value: viewModel.searchState)
+        .navigationBarHidden(true)
     }
+    
+    func getForegroundColor() -> Color {
+        if viewModel.searchState == .hasResult {
+            return AppColor.woodsmoke!
+        } else {
+            return Color.white
+        }
+    }
+    
+    func getHeaderBackgroundColor() -> Color {
+        if viewModel.searchState == .hasResult {
+            return AppColor.woodsmoke!
+        } else {
+            return Color.white
+        }
+    }
+    
+    func getBackgroundColor() -> Color {
+        if viewModel.searchState == .hasResult {
+            return Color.white
+        } else {
+            return AppColor.woodsmoke!
+        }
+    }
+    
+    func getSeachIconColor() -> String {
+        if viewModel.searchState == .hasResult {
+            return "icon-black-close"
+        } else {
+            return "icon-white-search"
+        }
+    }
+    
+    func getExitIcon() -> String {
+        if viewModel.searchState == .hasResult {
+            return "icon-black-close"
+        } else {
+            return "icon-white-close"
+        }
+    }
+    
+    
 }
 
 // A view that shows the data for one Restaurant.

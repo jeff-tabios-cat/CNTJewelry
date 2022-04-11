@@ -51,7 +51,8 @@ final class MockURLProtocol: URLProtocol {
     
     override func startLoading() {
         
-        let filename = "mock_" + (request.url?.lastPathComponent ?? "") + "_" + (request.httpMethod ?? "")
+//        let filename = "mock_" + (request.url?.lastPathComponent ?? "") + "_" + (request.httpMethod ?? "")
+        let filename = (request.url?.lastPathComponent ?? "")
         
         if let data = getJsonDataFromFile(filename: filename),
             let url = request.url,

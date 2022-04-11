@@ -51,7 +51,7 @@ struct LoginView: View {
                 
                 VStack(alignment: .leading) {
                     Text("Welcome to Cartier Atlas")
-                        .font(Font.custom("BrilliantCutProB7-Medium", size: 24))
+                        .font(.custom("BrilliantCutProB7-Medium", size: 24))
                         .foregroundColor(Color.white)
                     Text("Login with FaceID")
                         .font(Font.custom("BrilliantCutProB7-Medium", size: 14))

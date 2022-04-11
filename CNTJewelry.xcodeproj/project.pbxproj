@@ -91,6 +91,9 @@
 		BEEBAF6A27EC5CCB005FC4E9 /* Briefing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6927EC5CCB005FC4E9 /* Briefing.swift */; };
 		BEEBAF6E27EC60BC005FC4E9 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6D27EC60BC005FC4E9 /* Resources.swift */; };
 		BEEBAF7027EC60C4005FC4E9 /* Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEBAF6F27EC60C4005FC4E9 /* Live.swift */; };
+		BEF38A982802C0F600F9E772 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF38A972802C0F600F9E772 /* AppFonts.swift */; };
+		BEF38A9A2802C59500F9E772 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF38A992802C59500F9E772 /* AppColors.swift */; };
+		BEF38A9C2802C9D500F9E772 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF38A9B2802C9D500F9E772 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +184,9 @@
 		BEEBAF6927EC5CCB005FC4E9 /* Briefing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Briefing.swift; sourceTree = "<group>"; };
 		BEEBAF6D27EC60BC005FC4E9 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		BEEBAF6F27EC60C4005FC4E9 /* Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
+		BEF38A972802C0F600F9E772 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		BEF38A992802C59500F9E772 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		BEF38A9B2802C9D500F9E772 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +284,7 @@
 		BE33CB9927D5E335001A2DFC /* CNTJewelry */ = {
 			isa = PBXGroup;
 			children = (
+				BEF38A962802C0D500F9E772 /* Theme */,
 				BE41F6E727F58ACC0031FDF6 /* Models */,
 				BE64347F27F42EA800BB4F26 /* General */,
 				BE33CBA827D5E375001A2DFC /* Modules */,
@@ -344,6 +351,7 @@
 		BE41F6F527F5970F0031FDF6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BEF38A9D2802C9DF00F9E772 /* Service */,
 				BE41F6F627F5971A0031FDF6 /* mock */,
 				BE41F70827F59C170031FDF6 /* APIService.swift */,
 				BE41F70A27F59F900031FDF6 /* MockURLProtocol.swift */,
@@ -520,6 +528,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BEF38A962802C0D500F9E772 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BEF38A972802C0F600F9E772 /* AppFonts.swift */,
+				BEF38A992802C59500F9E772 /* AppColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		BEF38A9D2802C9DF00F9E772 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BEF38A9B2802C9D500F9E772 /* Search.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -637,12 +662,14 @@
 				BE2FA14F27DF47AB0032DD9C /* HealthKitSetupAssistant.swift in Sources */,
 				BEEBAF6A27EC5CCB005FC4E9 /* Briefing.swift in Sources */,
 				BE41F70D27F59FB80031FDF6 /* Endpoints.swift in Sources */,
+				BEF38A9A2802C59500F9E772 /* AppColors.swift in Sources */,
 				BE41F6EB27F58C8B0031FDF6 /* Briefings.swift in Sources */,
 				BE41F6E927F58B7E0031FDF6 /* Articles.swift in Sources */,
 				BE2FA14B27DF474C0032DD9C /* UserHealthProfile.swift in Sources */,
 				BE85359527FFE91400718028 /* SearchItemView.swift in Sources */,
 				BE75094F27FC34C500159928 /* SearchViewModel.swift in Sources */,
 				BE2FA14D27DF47830032DD9C /* ProfileDataStore.swift in Sources */,
+				BEF38A982802C0F600F9E772 /* AppFonts.swift in Sources */,
 				BE41F6F427F5900B0031FDF6 /* ArticleHero.swift in Sources */,
 				BE33CBAF27D5F42C001A2DFC /* LoginViewModel.swift in Sources */,
 				BEEBAF7027EC60C4005FC4E9 /* Live.swift in Sources */,
@@ -669,6 +696,7 @@
 				BE06AB4027E88E47000B00F1 /* FTUEViewModel.swift in Sources */,
 				BE06AB3C27E886B6000B00F1 /* FTUE3.swift in Sources */,
 				BE06AB3627E8857E000B00F1 /* FTUEView.swift in Sources */,
+				BEF38A9C2802C9D500F9E772 /* Search.swift in Sources */,
 				BE33CB9B27D5E335001A2DFC /* CNTJewelryApp.swift in Sources */,
 				BE8BCFFA27EB168F00EDD2F0 /* BottomMenu.swift in Sources */,
 			);
